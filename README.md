@@ -7,4 +7,6 @@ I genuinely appreciate your presence here. Whether you're a fellow developer, po
 Feel free to explore my projects and get in touch if you'd like to discuss anything further. Your interest and support drive me to constantly improve and innovate.
 
 Thank you once again for being a part of my journey!
+
+
 Savannah Correro

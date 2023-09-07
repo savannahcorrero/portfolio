@@ -727,6 +727,7 @@ nav {
 
 /* POP-UP */
 .popup {
+    display: none;
     width: 888px;
     height: 100px;
     position: relative;

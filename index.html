@@ -2,43 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="script.js"></script>
     <title>SAV WEB DEV</title>
 </head>
 <body>
-    <div class="one">
-        <div class="navbar">
+    <header>
+        <nav>
             <a href="index.html">
-                <div class="logo"><video autoplay loop muted>
-                    <source src="content/sav web dev.mp4" type="video/mp4">
-                </video></div>
+                <div class="logo">
+                    <video autoplay loop muted src="content/sav web dev.mp4" type="video/mp4"></video>
+                </div>
             </a>
-            <div class="links">
-                <ul>
-                    <a href="#abt">
-                        <li>ABOUT</li>
-                    </a>
-                    <a href="#skl">
-                        <li>SKILLS</li>
-                    </a>
-                    <a href="#proj">
-                        <li>PROJECTS</li>
-                    </a>
-                    <a href="#con">
-                        <li>CONTACT</li>
-                    </a>
-                </ul>
-            </div>    
-        </div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="hero">
+    <section class="hero">
+        <div class="hero-content">
             <div class="hero-img">
-                <img src="content/headshot.svg"/>
+                <img src="content/headshot.svg" alt="Savannah's Headshot">
             </div>
             <div class="hero-txt">
-                <div class="sav">SAVANNAH CORRERO</div>
+                <h1>SAVANNAH CORRERO</h1>
                 <div class="type">
                     <ul class="dynamic-txts">
                         <li><span>WEB DEVELOPER</span></li>
@@ -48,101 +40,99 @@
                         <li><span>DESIGNER</span></li>
                     </ul>
                 </div>
-            </div>    
+            </div>
         </div>
-
-        <div class="scroll-2">
-            <a href="#abt"><span></span></a>
+        <div class="scroll1">
+            <a href="#about"><span></span></a>
         </div>
-    </div>  
+    </section>
     
-    <div class="two" id="abt">
-        <div class="about">
-            <div class="about-container">
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-txt">
                 <h3>ABOUT ME</h3>
-                <div class="about-txt">Hi, I’m Savannah! I’m a multifaceted self-taught web developer, and my journey into programming has been a truly transformative experience. Initially, I doubted whether I could pursue a career in this field without a computer science degree, but I soon realized that my determination and passion could break down any barriers. As a child, I admired how others could pour their hearts into their passions, whether it was sports or music. I yearned for that same level of enthusiasm in my own endeavors. Everything changed when I discovered the world of programming - it was a revelation! I am thrilled to have found a medium where I can channel my immense creativity and showcase it daily through web development. With each project, I aim to push boundaries, embrace challenges, and showcase the artistry that fuels my soul. My passion for design sets me apart in the tech space, giving me the ability to empathize with users and deliver the best possible experience. As I continue to grow and learn in this ever-evolving field, I can't wait to explore new technologies, stay on top of design trends, and infuse my projects with a touch of artistry that leaves a lasting impact, propelling me to new heights in the world of tech and web development.</div>
+                <p>Hi, I’m Savannah! I’m a multifaceted self-taught web developer, and my journey into programming has been a truly transformative experience. Initially, I doubted whether I could pursue a career in this field without a computer science degree, but I soon realized that my determination and passion could break down any barriers. As a child, I admired how others could pour their hearts into their passions, whether it was sports or music. I yearned for that same level of enthusiasm in my own endeavors. Everything changed when I discovered the world of programming - it was a revelation! I am thrilled to have found a medium where I can channel my immense creativity and showcase it daily through web development. With each project, I aim to push boundaries, embrace challenges, and showcase the artistry that fuels my soul. My passion for design sets me apart in the tech space, giving me the ability to empathize with users and deliver the best possible experience. As I continue to grow and learn in this ever-evolving field, I can't wait to explore new technologies, stay on top of design trends, and infuse my projects with a touch of artistry that leaves a lasting impact, propelling me to new heights in the world of tech and web development.
+                </p>
             </div>
-
             <div class="about-pic">
-                <img src="content/polaroid.svg">
+                <img src="content/polaroid.svg" alt="Polaroid images of Bandit (Savannah's Basset Hound) and Savannah on a mountain in New Mexico">
             </div>
         </div>
-
-        <div class="scroll-3">
-            <a href="#skl"><span></span></a>
+        <div class="scroll2">
+            <a href="#skills"><span></span></a>
         </div>
-    </div>
+    </section>
 
-    <div class="three" id="skl">
-        <div class="skills">SKILLS</div>
-        <div class="img-container">
-            <div class="skill">
-                <img src="content/html.svg">
-                <div>HTML</div>
-            </div>
-            <div class="skill">
-                <img src="content/css.svg">
-                <div>CSS</div>
-            </div>
-            <div class="skill">
-                <img src="content/bootstrap.svg">
-                <div>BOOTSTRAP</div>
-            </div>
-            <div class="skill">
-                <img src="content/java.svg">
-                <div>JAVASCRIPT<br>(INTERMEDIATE)</div>
-            </div>
-        </div>
-       
-        <div class="learning">LEARNING</div>
-        <div class="img-container">
-            <div class="learn">
-                <img src="content/java.svg">
-                <div>JAVASCRIPT<br>(ADVANCED)</div>
-            </div>
-            <div class="learn">
-                <img src="content/node.svg">
-                <div>NODE.JS</div>
-            </div>
-            <div class="learn">
-                <img src="content/react.svg">
-                <div>REACT</div>
-            </div>
-        </div>
-
-        <div class="scroll-4">
-            <a href="#proj"><span></span></a>
-        </div>
-
-    </div>
-
-    <div class="four" id="proj">
-        <h3>PROJECTS</h3>
-        <div class="project-container">
-            <a href="https://savvy-chef.savannahcorrero.com/">
-                <div class="project">
-                    <img src="content/savvy-chef.png">
-                    <figcaption>SAVVY CHEF</figcaption>
+    <section class="skills" id="skills">
+        <div class="skill-content">
+            <h3>SKILLS</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <img src="content/html.svg" alt="HTML Icon">
+                    <figcaption>HTML</figcaption>
                 </div>
-            </a>
-            <a href="https://savs-arcade.savannahcorrero.com/">
-                <div class="project">
-                    <img src="content/savs-arcade.png">
-                    <figcaption>SAV'S ARCADE</figcaption>
+                <div class="skill">
+                    <img src="content/css.svg" alt="CSS Icon">
+                    <figcaption>CSS</figcaption>
                 </div>
-            </a>
+                <div class="skill">
+                    <img src="content/bootstrap.svg" alt="Bootstrap Icon">
+                    <figcaption>BOOTSTRAP</figcaption>
+                </div>
+                <div class="skill">
+                    <img src="content/java.svg" alt="JavaScript Icon">
+                    <figcaption>JAVASCRIPT<br>(INTERMEDIATE)</figcaption>
+                </div>
+            </div>
+            <h3>LEARNING</h3>
+            <div class="learn-container">
+                <div class="learn">
+                    <img src="content/java.svg" alt="JavaScript Icon">
+                    <figcaption>JAVASCRIPT<br>(ADVANCED)</figcaption>
+                </div>
+                <div class="learn">
+                    <img src="content/node.svg" alt="Node.js Icon">
+                    <figcaption>NODE.JS</figcaption>
+                </div>
+                <div class="learn">
+                    <img src="content/react.svg" alt="React Icon">
+                    <figcaption>REACT</figcaption>
+                </div>
+            </div>
         </div>
-
-        <div class="scroll-5">
-            <a href="#con"><span></span></a>
+        <div class="scroll3">
+            <a href="#projects"><span></span></a>
         </div>
-    </div>
+    </section>
 
-    <div class="five" id="con">
+    <section class="projects" id="projects">
+        <div class="project-content">
+            <h3>PROJECTS</h3>
+            <div class="project-container">
+                <a href="https://savvy-chef.savannahcorrero.com" target="_blank">
+                    <div class="project">
+                        <img src="content/savvy-chef.png" alt="Savvy Chef Project">
+                        <figcaption>SAVVY CHEF</figcaption>
+                    </div>
+                </a>
+                <a href="https://savs-arcade.savannahcorrero.com" target="_blank">
+                    <div class="project">
+                        <img src="content/savs-arcade.png" alt="Sav's Arcade Project">
+                        <figcaption>SAV'S ARCADE</figcaption>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scroll4">
+            <a href="#contact"><span></span></a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
         <h3>CONTACT</h3>
         <div class="msg-container">
             <h5>LEAVE A NOTE</h5>
-            <div class="form-container" id="dk">
+            <div class="form-container">
                 <form name="msg-form" action="https://script.google.com/macros/s/AKfycbwr8nwD2TiNM-UTrG2HG4X7xfD7fjfpuGHHVg7pAI24GFYvSlbxw7DkUF7iYI_QE89HIw/exec" method="post">
                     <div class="row-one" id="dk">
                         <div class="name-cont" id="dk">
@@ -162,39 +152,38 @@
                         <button type="submit" class="go">SEND</button>
                     </div>
                 </form>
-            </div>
-            <span id="thx"></span>
-        </div>
-        <div class="icons">
-            <div class="icon">
-                <a href="https://github.com/savannahcorrero">
-                    <i class="bi bi-github" style="font-size: 32px"></i>
-                    <figcaption style="font-size: 11px">GITHUB</figcaption>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="https://linkedin.com/in/savannahcorrero">
-                    <i class="bi bi-linkedin" style="font-size: 32px"></i>
-                    <figcaption style="font-size: 11px">LINKEDIN</figcaption>
-                </a>
-            </div>
-            <div class="icon">
-                <a href = "mailto: savannahcorrero@gmail.com">
-                    <i class="bi bi-envelope-fill" style="font-size: 32px"></i>
-                    <figcaption style="font-size: 11px">EMAIL</figcaption>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="#resume">
-                    <button onclick="openForm()"><i class="bi bi-file-earmark-code" style="font-size: 32px"></i></button>
-                    <figcaption style="font-size: 11px">REQ RESUME</figcaption>
-                </a>
+                <span id="thx"></span>
             </div>
         </div>
 
-        <div class="popup" id="popUp">
-            <form name="popup-form" action="https://script.google.com/macros/s/AKfycbyVG_f_Aq2-dcDD_E1pz5PxLQ8VIV-gb2UG0_aZfsxERu0IysIMp98cQSicZO1zs42ycw/exec" method="post">
-                <div class="pop-container">
+        <div class="social">
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/savannahcorrero/" target="_blank"><i class="bi bi-linkedin" style="font-size: 32px"></i>
+                <figcaption style="font-size: 11px">LINKEDIN</figcaption>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/SavannahCorrero" target="_blank"><i class="bi bi-github" style="font-size: 32px"></i>
+                <figcaption style="font-size: 11px">GITHUB</figcaption>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="mailto: savannahcorrero@gmail.com" target="_blank"><i class="bi bi-envelope-fill" style="font-size: 32px"></i>
+                <figcaption style="font-size: 11px">EMAIL</figcaption>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#popUp">
+                    <button onclick="openForm()"><i class="bi bi-file-earmark-code" style="font-size: 32px"></i></button>
+                    <figcaption style="font-size: 11px">REQ RESUME</figcaption>
+                </a>
+        </div>
+    </section>
+
+    <div class="popup" id="popUp">
+        <form name="popup-form" action="https://script.google.com/macros/s/AKfycbyVG_f_Aq2-dcDD_E1pz5PxLQ8VIV-gb2UG0_aZfsxERu0IysIMp98cQSicZO1zs42ycw/exec" method="post">
+            <div class="pop-container">
+                <div class="pop-small">
                     <div class="pop" id="dk">
                         <figcaption>NAME</figcaption>
                         <input type="name" placeholder="Your name" class="pop-name" name="pop-name" autocomplete="on">
@@ -207,20 +196,17 @@
                         <figcaption>EMAIL</figcaption>
                         <input type="email" placeholder="Your email address" class="pop-email" name="pop-email" autocomplete="on">
                     </div>
-                    <div class="pop-btns">
-                        <button type="button" class="close" onclick="closeForm()"><i class="bi bi-x-lg" style="font-size: 18px"></i></button>
-                        <button type="submit" class="request">REQUEST</button>
-                    </div>
                 </div>
-                <div class="popspan">
-                    <span id="resume"></span>
+                <div class="pop-btns">
+                    <button type="button" class="close" onclick="closeForm()"><i class="bi bi-x-lg" style="font-size: 18px"></i></button>
+                    <button type="submit" class="request">REQUEST</button>
                 </div>
-            </form>
-        
-        </div>
+            </div>
+        </form>
+        <span id="resume"></span>
     </div>
 
-    <footer class="foot">Copyright © 2023 SavWebDev</footer>
+    <footer class="foot">Copyright &copy; 2023 SavWebDev</footer>
 
     <script>
         // POP-UP FORM OPEN / CLOSE

@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="response.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>SAV WEB DEV</title>
 </head>
@@ -12,15 +13,20 @@
         <nav>
             <a href="index.html">
                 <div class="logo">
-                    <video autoplay loop muted src="content/sav web dev.mp4" type="video/mp4"></video>
+                    <video autoplay loop muted playsinline src="content/sav web dev.mp4" type="video/mp4"></video>
                 </div>
             </a>
-            <ul class="nav-links">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <a href="#" class="toggle-button">
+                <i class="bi bi-list" style="font-size: 25px;" id="tog"></i>
+            </a>
+            <div class="nav-menu">      
+                <ul class="nav-links">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>     
         </nav>
     </header>
 
@@ -31,15 +37,11 @@
             </div>
             <div class="hero-txt">
                 <h1>SAVANNAH CORRERO</h1>
-                <div class="type">
-                    <ul class="dynamic-txts">
-                        <li><span>WEB DEVELOPER</span></li>
-                        <li><span>YOGI</span></li>
-                        <li><span>CHEF</span></li>
-                        <li><span>TRAVELER</span></li>
-                        <li><span>DESIGNER</span></li>
-                    </ul>
-                </div>
+                <h2>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "WEB DEVELOPER", "YOGI", "CHEF", "TRAVELER", "DESIGNER" ]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h2>
             </div>
         </div>
         <div class="scroll1">
@@ -209,6 +211,69 @@
     <footer class="foot">Copyright &copy; 2023 SavWebDev</footer>
 
     <script>
+
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        
+    };
+
+        // MENU TOGGLE
+        const toggleButton = document.querySelector(".toggle-button");
+        const navbarLinks = document.querySelector(".nav-links");
+
+        toggleButton.addEventListener("click", function (e) {
+        e.preventDefault(); 
+        navbarLinks.classList.toggle("active");
+        })
+
         // POP-UP FORM OPEN / CLOSE
         function openForm() {
             document.getElementById("popUp").style.display = "block";

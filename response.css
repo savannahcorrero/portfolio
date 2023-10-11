@@ -1,0 +1,643 @@
+/* @media (max-width: 1000px) {
+
+    .hero {
+        margin-top: 25px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        gap: 30px;
+    }
+    .hero-txt {
+        width: 80%;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .hero-txt h1 {
+        font-size: 60px;
+    }
+
+    .hero img {
+        height: auto;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+} */
+
+
+/* @media (max-width: 900px) {
+    
+    .nav-links {
+        font-size: 17px;
+    }
+
+    video {
+        height: 70px;
+        width: auto;
+    }
+
+   
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+ 
+    .hero img {
+        height: auto;
+        max-width: 80%;
+        margin-top: 100px;
+    }
+ 
+    .hero-txt {
+        margin-top: 20px;
+    }
+ 
+    .hero-txt h1 {
+        font-size: 40px;
+    }
+
+
+    .typewrite {
+        font-size: 35px;
+    }
+
+
+    .about {
+        margin-top: -100px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .about-txt {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .about h3 {
+        font-size: 36px;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .about-pic img {
+        height: auto;
+        max-width: 80%;
+        margin-left: 50px;
+    }
+
+
+    .skills {
+        padding: 20px;
+        margin-top: 75px;
+    }
+
+    .skills h3 {
+        font-size: 40px;
+    }
+
+    .skill-container, .learn-container {
+        justify-content: space-around;
+        gap: 60px;
+    }
+
+    .skill img, .learn img {
+        height: 60px;
+    }
+
+    .skill figcaption, .learn figcaption {
+        font-size: 14px;
+    }
+
+    
+    .projects {
+        margin-top: -30px;
+        text-align: center;
+    }
+
+    .project-content {
+        margin-top: -20px;
+    }
+
+    .project-content h3 {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+
+    .project-container {
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    .project img {
+        width: 90%;
+        max-width: 400px; 
+    }
+
+    .project figcaption {
+        font-size: 20px;
+    }
+
+
+    .contact h3 {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+
+    .msg-container {
+        width: 90%;
+        height: 35vh;
+        max-width: none;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .msg-container h5 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        width: 90%;
+        max-width: 90%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-one, .row-two, .row-three {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-one {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 100px;
+        width: 88.2%;
+    }
+
+    .name, .email {
+        flex: 1;
+        font-size: 14px;
+    }
+
+    .name {
+        position: relative;
+        width: 100%;
+    }
+
+    .email {
+        position: relative;
+        width: 100%;
+    }
+
+    .row-two {
+        margin-top: 5px;
+        width: 98.1%;
+        padding-bottom: 5px;
+    }
+
+    .row-two input[type="text"] {
+        padding-top:5px;
+    }
+
+    .msg {
+        position: relative;
+        width: 89%;
+        font-size: 14px;
+    }
+
+    #thx {
+        font-size: 14px;
+        left: 1;
+        margin-left: -25px;
+    }
+
+    .row-three {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: -10px;
+        margin-left: 12px;
+    }
+
+    .row-three button[type="submit"] {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .icon i {
+        font-size: 20px;
+    }
+
+
+    .social {
+        margin-bottom: 10px;
+    }
+
+    .popup {
+        width: 86%;
+        max-width: none;
+        margin-top: -100px;
+        left: 7%;
+        transform: none;
+        height: auto;
+        font-size: 14px;
+        overflow: hidden;
+    }
+
+    .popup-form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2px;
+        max-width: none;
+    }
+
+    .pop-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .pop-container {
+        gap: 18px;
+    }
+
+    .pop-small {
+        display: flex;
+        background-color: transparent;
+        gap: 75px;
+        margin-right: 0;
+        width: 105%;
+    }
+
+    .pop {
+        padding: 5px;
+        margin-top: 18px;
+    }
+
+    #dk figcaption {
+        font-size: 14px;
+    }
+    
+    .pop-name {
+        width: 110%;
+        font-size: 12px;
+    }
+    
+    .pop-work {
+        width: 107%;
+        font-size: 12px;
+    }
+    
+    .pop-email {
+        width: 155%;
+        font-size: 12px;
+    }
+
+    .pop-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: end;
+        margin-right: 5px;
+    }
+
+    .pop-btns button[type="submit"] {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    #resume {
+        font-size: 9px;
+        top: 70%;
+        left: 4%;
+    }
+
+
+    .scroll1, .scroll2, .scroll3, .scroll4 {
+        display: none;
+    }
+
+    .scroll1 span, .scroll2 span, .scroll3 span, .scroll4 span {
+        display: none;
+    }
+
+    #about {
+        scroll-margin-top: -55px;
+    }
+
+    #skills {
+        scroll-margin-top: -50px;
+    }
+
+    #projects {
+        scroll-margin-top: 115px;
+    }
+
+    #contact {
+        scroll-margin-top: 60px;
+    }
+
+
+    .foot {
+        height: 100%;
+        font-size: 10px;
+        padding: 10px;
+    }
+} */
+
+@media only screen and (max-width: 950px) {
+/* NAV BAR */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .logo {
+        max-width: 35vw;
+    }
+
+    .hero {
+        margin-top: 5px;
+    }
+
+    .hero-txt {
+        margin-top: -75px;
+    }
+
+    .hero-content {
+        gap: 75px;
+    }
+
+
+
+    .scroll1 span, .scroll2 span, .scroll3 span, .scroll4 span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .scroll1 {
+        top: 15%;
+    }
+
+    .scroll2 {
+        top: 14%;
+    }
+
+}
+
+/* MOBILE SCREEN SIZE */
+@media only screen and (max-width: 600px) {
+    /* NAV BAR */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .logo {
+        max-width: 50vw;
+    }
+
+
+    /* HERO */
+    .hero {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hero-content {
+        padding: 20px; 
+        gap: 80px;
+    }
+
+    .hero img {
+        height: auto;
+        max-width: 90%;
+        margin-top: 50px;
+    }
+
+    .hero-txt h1 {
+        font-size: 45px;
+        margin-top: -25px;
+        margin-left: 10px;
+    }
+
+    /* TYPEWRITING TEXT */
+    .type {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dynamic-txts li {
+        font-size: 30px;
+        height: 100%;
+    }
+
+    
+    /* ABOUT */
+    .about-content {
+        margin-top: 0; /* Remove top margin */
+        padding: 20px; /* Adjust padding */
+        gap: 20px; /* Adjust gap between elements */
+    }
+
+    .about h3 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .about p {
+        font-size: 14px; /* Adjust font size */
+        max-width: 100%; /* Adjust maximum width */
+    }
+
+    .about-pic img {
+        margin-left: 0; /* Remove left margin */
+        max-width: 90%; /* Adjust image size */
+    }
+
+    /* Skills */
+    .skills h3 {
+        font-size: 32px; /* Adjust font size */
+    }
+
+    .skill img,
+    .learn img {
+        height: 50px; /* Adjust image size */
+    }
+
+    .skill figcaption,
+    .learn figcaption {
+        margin-top: 5px; /* Adjust margin */
+    }
+
+    /* Projects */
+    .projects h3 {
+        font-size: 32px; /* Adjust font size */
+        padding-bottom: 20px;
+    }
+
+    .project-content {
+        margin-top: 20px; /* Adjust margin */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .project-container {
+        flex-direction: column; /* Change to a single column layout */
+        gap: 20px; /* Adjust gap between projects */
+    }
+
+    .project img {
+        width: 90%; /* Adjust image width */
+    }
+
+    .project figcaption {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    /* Contact */
+    .contact h3 {
+        font-size: 32px; /* Adjust font size */
+        margin-top: 20px; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .msg-container {
+        height: auto; /* Adjust height */
+    }
+
+    .msg-container h5 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .form-container {
+        width: 100%; /* Adjust width */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .row-one,
+    .row-two,
+    .row-three {
+        flex-direction: column; /* Change to a single column layout */
+        width: 100%; /* Adjust width */
+    }
+
+    .name,
+    .email {
+        width: 100%; /* Adjust input width */
+    }
+
+    .row-three {
+        justify-content: center; /* Center the button */
+    }
+
+    .row-three button[type="submit"] {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .social {
+        flex-direction: column; /* Change to a single column layout */
+        gap: 10px; /* Adjust gap between icons */
+    }
+
+    .icon i {
+        font-size: 24px; /* Adjust font size */
+    }
+
+
+
+    .scroll1 span, .scroll2 span, .scroll3 span, .scroll4 span {
+        width: 15px;
+        height: 15px;
+    }
+}
